@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .selectors > label {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="selectors">
+        <label>
+          Select Difficulty:
+          <select id="difficulty" class="filter">
+            <option value="all">All</option>
+          </select>
+        </label>
+
+        <label
+          >Select Cuisine:
+          <select id="cuisine" class="filter">
+            <option value="all">All</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="search-bar">
+        <label>Search:
+          <input type="text" id="search" />
+          <button id="search-btn">Search</button>
+        </label>
+      </div>
+    </div>
+
+    <div id="show"></div>
+    <br />
+    <center>
+      <button id="load-more">Load More</button>
+    </center>
+
+    <script src="app.js"></script>
+  </body>
+</html>
